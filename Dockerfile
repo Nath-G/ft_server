@@ -6,7 +6,7 @@
 #    By: nagresel <nagresel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/06 11:22:31 by nagresel          #+#    #+#              #
-#    Updated: 2020/01/07 17:16:42 by nagresel         ###   ########.fr        #
+#    Updated: 2020/01/08 13:36:11 by nagresel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,10 +19,21 @@ run apt-get -y install nginx
 run apt-get -y install mariadb-server mariadb-client
 run apt-get -y install php7.3 php7.3-fpm php7.3-mysql php-common php7.3-cli php7.3-common php7.3-json php7.3-opcache php7.3-readline
 #run mysql_secure_installation
+#delete conf default file
+run rm /etc/nginx/sites-enabled/default
+
 #cmd en plus 
 copy ./srcs/init.sh .
-copy ./srcs/ngnix.conf ./etc/nginx/sites-available/localhost/
+copy ./srcs/nginx.conf /etc/nginx/sites-available/localhost
 
+#link creation
+run ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/localhost
 #1 seule cmd autorisee au lancement de l'installation init.sh est le script de lancement une fois le conteneur lance
+#utils
+run apt-get -y install nano
+#run apt-get -y install wget
+#run apt-get -y install procps
+
+#script
 cmd bash init.sh
 #CMD /usr/bin/nginx -g "daemon off;"
