@@ -6,7 +6,7 @@
 #    By: nagresel <nagresel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/06 11:22:31 by nagresel          #+#    #+#              #
-#    Updated: 2020/01/10 19:15:24 by nagresel         ###   ########.fr        #
+#    Updated: 2020/01/14 18:05:56 by nagresel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ run rm /etc/nginx/sites-enabled/default
 #Files required
 copy ./srcs/init.sh .
 copy ./srcs/nginx.conf /etc/nginx/sites-available/localhost
-copy ./srcs/config.inc.php /var/www/html/phpmyadmin/config.inc.php
+copy ./srcs/config.inc.php /usr/share/nginx/html/phpmyadmin/config.inc.php
 
 #link creation
 run ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/localhost
