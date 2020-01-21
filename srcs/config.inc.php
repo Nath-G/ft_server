@@ -8,9 +8,9 @@
  * or at <https://docs.phpmyadmin.net/>.
  *
  * @package PhpMyAdmin
- */
-declare(strict_types=1);
-
+ 
+* declare(strict_types=1);
+*/
 /**
  * This is needed for cookie based authentication to encrypt password in
  * cookie. Needs to be 32 chars long.
@@ -33,7 +33,7 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = true;
-#$cfg['Servers'][$i]['AllowRoot'] = true;
+$cfg['Servers'][$i]['AllowRoot'] = true;
 /**
  * phpMyAdmin configuration storage settings.
  */
