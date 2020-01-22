@@ -1,8 +1,8 @@
 service mysql start
 
 #Config access
-chown -R www-data /usr/share/nginx/html/*
-chmod -R 755 /usr/share/nginx/html/*
+chown -R www-data /usr/share/nginx/html/
+chmod -R 755 /usr/share/nginx/html/
 
 #configMysql
 echo "CREATE DATABASE wordpress_bdd;" | mysql -u root --skip-password
@@ -12,8 +12,11 @@ echo "update mysql.user set plugin='mysql_native_password' where user='root';" |
 echo "FLUSH PRIVILEGES;" | mysql -u root --skip-password
 
 #SSL
-#mkdir /etc/nginx/ssl
-#openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out /etc/nginx/ssl/theSiteIwant.pem -keyout /etc/nginx/ssl/theSiteIwant.key -subj "/C=FR/ST=Paris/L=Paris/O=42 School/OU=nagresel/CN=theSiteIwant"
+mkdir /etc/nginx/ssl
+openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out /etc/nginx/ssl/theSiteIwant.pem -keyout /etc/nginx/ssl/theSiteIwant.key -subj "/C=FR/ST=Paris/L=Paris/O=42 School/OU=nagresel/CN=theSiteIwant"
+
+#injecter les table importee en BD 
+#mysql -u root --skip-password wordpress_bdd < wordpress_bdd.sql
 
 service nginx start
 service php7.3-fpm start
