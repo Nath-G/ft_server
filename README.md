@@ -1,7 +1,7 @@
 # ft_server
 
 #-Commandes docker- :
- - docker build . -t test : permet de builter le docker -t est l'option du nom du tagici test
+ * docker build . -t test : permet de builter le docker -t est l'option du nom du tagici test
 - docker run -p80:80 -p443:443 -t -d test : permet de mettre en route le process -p precise les ports -t le nom du tag -d run en mode detachee (le proces tour ne meme si la console est fermee).
 - docker exec -ti 3b7a38f87941 bash : permet de rentrer dans le container grace au numero d'identifiant liste grace a la commande ci-dessous.
 - docker ps -a : permet de lister les images existantes et si elles sont toujours lancee 
