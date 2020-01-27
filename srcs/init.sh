@@ -18,6 +18,10 @@ openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out /etc/nginx/ssl/
 #injecter les table importee en BD 
 mysql -u root --skip-password wordpress_bdd < /usr/share/nginx/html/wordpress/wordpress_bdd.sql
 
+#clean up
+rm phpMyAdmin-5.0.1-all-languages.tar.gz
+rm /usr/share/nginx/html/index.html
+
 service nginx start
 service php7.3-fpm start
 bash
