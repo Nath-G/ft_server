@@ -15,7 +15,7 @@ echo "FLUSH PRIVILEGES;" | mysql -u root --skip-password
 mkdir /etc/nginx/ssl
 openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out /etc/nginx/ssl/theSiteIwant.pem -keyout /etc/nginx/ssl/theSiteIwant.key -subj "/C=FR/ST=Paris/L=Paris/O=42 School/OU=nagresel/CN=theSiteIwant"
 
-#injecter les table importee en BD 
+#inject BDD imported tab 
 mysql -u root --skip-password wordpress_bdd < /usr/share/nginx/html/wordpress/wordpress_bdd.sql
 
 #clean up
