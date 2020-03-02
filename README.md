@@ -13,3 +13,6 @@ Le package wordpress a ete installe une fois, le site a ete cree puis le dossier
 #Documentation :
     [SSL](https://linuxize.com/post/creating-a-self-signed-ssl-certificate/)
 !! Utiliser ENTRYPOINT vs CMD pour les image multi mode
+
+Documentation :
+https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster
