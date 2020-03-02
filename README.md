@@ -16,3 +16,5 @@ Le package wordpress a ete installe une fois, le site a ete cree puis le dossier
 
 Documentation :
 https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
