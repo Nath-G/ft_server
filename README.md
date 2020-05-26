@@ -9,8 +9,8 @@
     * docker ps -a : permet de lister les images existantes et si elles sont toujours lancees 
     * docker stop adbed92ba3ce  && docker rm adbed92ba3ce : permet de stopper et de supprimer une image
 - Remarques :
-Le package wordpress a ete installe une fois, le site a ete cree puis le dossier ainsi cree a ete copie dans le dossier source afin d'etre copier a l'installation de docker.
-!! Utiliser ENTRYPOINT vs CMD pour les image multi mode
+   * Le package wordpress a ete installe une fois, le site a ete cree puis le dossier ainsi cree a ete copie dans le dossier source afin d'etre copier a l'installation de docker.
+* ! Utiliser ENTRYPOINT vs CMD pour les image multi mode
 
 - Documentation :
    * https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster
