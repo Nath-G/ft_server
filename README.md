@@ -16,3 +16,4 @@ Le package wordpress a ete installe une fois, le site a ete cree puis le dossier
    * https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster
    * [SSL](https://linuxize.com/post/creating-a-self-signed-ssl-certificate/)
    * https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
+   * Serveur web Nginx.pdf (inclus dans le projet)
