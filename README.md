@@ -1,8 +1,8 @@
 # ✅ ft_server
 - Cursus 42 2019 - 2020
-1 - Démarrer docker grâce au script init_docker.sh de la 42_tools_box
+- 1 - Démarrer docker grâce au script init_docker.sh de la 42_tools_box
 
-2 - Commandes docker :
+- 2 - Commandes docker :
     * docker build . -t test : permet de builter le docker -t est l'option du nom du tagici test
     * docker run -p80:80 -p443:443 -t -d test : permet de mettre en route le process -p precise les ports -t le nom du tag -d run en mode detachee (le proces tour ne meme si la console est fermee).
     * docker exec -ti 3b7a38f87941 bash : permet de rentrer dans le container grace au numero d'identifiant liste grace a la commande ci-dessous :
@@ -13,6 +13,6 @@ Le package wordpress a ete installe une fois, le site a ete cree puis le dossier
 !! Utiliser ENTRYPOINT vs CMD pour les image multi mode
 
 - Documentation :
-https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster
-[SSL](https://linuxize.com/post/creating-a-self-signed-ssl-certificate/)
-https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
+   * https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster
+   * [SSL](https://linuxize.com/post/creating-a-self-signed-ssl-certificate/)
+   * https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
